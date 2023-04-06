@@ -1,0 +1,397 @@
+         
+		                 Written Test
+						 
+	1.Explain about Condtructor & its types?
+             CONSTRUCTOR:
+                * Constructor is a Special Method which is used to create and initializing an objects.
+                * In the class ,it always contain one default constructor.
+             Rules :
+                 1. The class name and the constructor name must be same.
+                 2. There is no explicit return type in constructor.				 
+				 3. Constructor doesn't contain static,final,keywords etc.
+			Syntax;
+			   public class classname{
+			   
+			       public classname(){
+				   //block of constructor
+				   }
+			   }
+			   
+			Types of constructor:
+                 1)Default Condtructor or no arg constructor:
+				        In default constructor It does't contain any parameters.It defaultly assign values like 0 or null based on the datatype.    
+					Syntax
+					     public class classname{
+			   
+			       public classname(){
+				   //block of constructor
+				   }
+			       }
+			      2) Parameterized Condtructor:
+				         In parameterized constructor it contains parameters.It declared the variables within the parantheses.
+						Syntax:
+					     public class classname{
+			   
+			       public classname(datatype refername){
+				   //block of constructor
+				   }
+			       } 
+				   for example 
+				    
+					     public class Animal{
+			   
+			       public Animal(String name){
+				   //block of constructor
+				   }
+			       }
+				   Call the Constructor:
+				       Call the constructor using  new() keyword.
+					   example Animal  animal = new Animal("lion");
+					   
+					   -------------*-------
+		2)FEATURES OF JAVA ;
+               Java have more features like,
+			   
+			   1. Object oriented    2. Simple   3.multithread    4.Portable  5.dynamic   6.Distributed 
+			   7.security     8.interpreted   9.high performance 10.neutral technology   11.platform independent
+			   
+			   
+			   1.Simple:
+			        * Java is easy to learn compared to the other programming language.
+					* It easy to understand by beginner level of programmers.
+					 
+			   2. Object oriented :
+ 			        * Java is an object oriented language.Other languages like c,c++ are procedure oriented languages.
+					* Object oriented means the objects are communicates through the program.
+					* objects are instance of class .The class is collection of objects or blueprint of Objects.
+			   3.Multithread:
+			        * Java is a multithreaded language .Because It can access more than one objects at a time.
+			   4. platform independent:
+                    * java has a concept like WORA(Write once run anywhere)	
+					* Compiler compiles the Java coding into Byte code. This Byte code run any platform ,but the platform must have jvm.
+					* It runs all os like windows ,linux etc.
+					
+				---------*------------
+		3) DIFFERENCE BETWEEN C++ &  JAVA		
+		
+		
+		              JAVA                                                    C++
+				
+				* java is a platform independent                    * C++ is a platform dependent language.
+				  language.
+				  
+				* In java there is no copy constructor.             * here it contain copy Condtructor.
+				
+				* In java ,pointor is not used because of data      * Here c++ use pointors
+				   safty
+					  
+				* java is a dynamic language.                       * c++ is standard language.
+					  
+				* java 	is a multi thread ,                         * C++ behaves based on the operating system and technologies
+				    neutral  in technology also 
+				* object oriented	                                * procedure oriented
+					  
+				 ---------------*------------  
+					  
+		4) JDK ,JVM,JRE		
+
+
+		    JDK:
+			  
+			  * JDK is abbrivated as JAVA DEVELOPMENT KIT 
+			  * Jdk is an whole pakage kit used to create and run the softwares.
+			  * jdk contains JRE (JRE contains JVM) ,library files and jit compiler.
+			  
+			JRE:
+			 * JRE is abbrivatedas JAVA RUNTIME ENVIRONMENT .
+			 * JRE cintains JVM itself.
+			 * JRE  is ane environment to run the java applications,programs.
+			 *It includes library files also.
+			  
+			JVM:
+			*Jvm is abbrivated as JAVA VIRTUAL MACHINE.
+			* Jvm is an abstract machine ie.it is a virtual machine .
+			* There is no hardware components presented.
+			* JVM is checks the class file contain main method.If it presents it load the class and allocate the memory .
+			  
+			 ---------**_______ 
+			  
+			  
+		5) TYPES OF MEMORY  AREA  ALLOCATED BY JVM	
+		
+			  TYPES OF MEMORY 
+			         1.STACK MEMORY
+					 2. HEAP MEMORY
+					 
+			  STACK MEMORY:
+			  * Class loader loads the class.Jvm checks the main method.
+			  * IF main methodis presented then it create a stack and stack frame.
+			  * The methods are include three parts.They are
+			         1. method name
+					 2. variables 
+					 3.  execution line
+					 
+		      * if the method have other methods create a othe stack frame.
+			  * The methods are executed correctly then the stack frame will be deleted.
+			  * After all methods execution the overall stack will be deleted.
+			  
+			  HEAP MEMORY:
+			   * The STRING data are stored in the heap memory.
+			   * The heap divided into two parts They are
+			           1. constant pool or String pool
+			           2. instance pool
+     
+			    1. Constant pool 
+				      *the strings which are created by literal  stored here.
+					 * IF the string is already exist it donot store the same string .It referenced the same address
+				2. instance pool:
+				     * In instance pool the strings which are created using new() keywords. 
+			         * Here each string is an objects .
+					 
+			  ----------*---------
+			  
+		6)   METHODS 	
+               
+			   DEFINITION:
+			       Methods are a functions that consist of block of statements.The methods ate callad in the main method the
+				   function and the block of statements will be  executed.
+				   
+				Syntax:
+                    ACCESS SPECIFIER   NONACCESSSPECIFIER  RETURNTYPE  METHOD NAME(PARAMETERS)	{
+					
+					//////bliack of statements
+					
+					}			
+					
+				example:
+                    public static void methodone(){
+					   System.out.println("hi");
+					}				
+			  
+			  * ACCESS SPECIFIER:
+			         this indicates  to the class who can access the  particular method.
+			  
+			  * NON ACCESS SPECIFIER
+			         Its indicate  there is no access specified for the method.
+					 generall static is used
+			  
+			  * RETURN TYPES
+			        It shows which return type we used.
+					void means there is no return type.
+					The return type and the rteurn values must be same data type.
+			  
+			  * Methodname
+					it indicates the name of the methods  
+					  
+			  * parameters 
+			      here the parameters are written inside the parantheses
+					  
+		
+		-----------*-------------
+		7)    METHOD OVERLOADING
+		
+		         Method overloading means the meathods have same methods name but different in parameters.
+				 
+				 Types of method overloading 
+				 1.number of parameters
+				 2.order of data types
+				 3. data types
+				 
+			1) NUMBER OF PARAMETERS 
+                 
+				 * the method name are same but difference in parameters.
+				 
+				example:
+
+				   public class Overloading{
+				   
+				       public static void main(string[] args){
+					   
+					     Overload();
+						 Overload(4);
+						 Overload(4,6);
+						 Overload(4,68,67); 
+					   
+					   }
+                  public static void Overload(){
+	                      System.out.println("java");
+	   
+	                    }
+						 public static void Overload(int num){
+	                      System.out.println("java");
+	   
+	                    }
+						 public static void Overload(int value ,int num1){
+	                      System.out.println("oops");
+	   
+	                    } public static void Overload(int value1,int val2,int val3){
+	                      System.out.println("object");
+	   
+	                    }
+				   
+				   }
+				 
+				2)different data types ;
+				 
+				 * the method name are same but difference in data types.
+				 
+				example:
+
+				   public class Overloading{
+				   
+				       public static void main(string[] args){
+					   
+					     Overload();
+						 Overload(4);
+						 Overload(4,6f);
+						  
+					   
+					   }
+                  public static void Overload(){
+	                      System.out.println("java");
+	   
+	                    }
+						 public static void Overload(int num){
+	                      System.out.println("java");
+	   
+	                    }
+						 public static void Overload(int value ,float num1){
+	                      System.out.println("oops");
+	   
+	                    } 
+				   
+				   }
+				 
+				 
+				3)  order of parameters  
+				
+				* the method name are same but difference in order of parameters.
+				 
+				example:
+
+				   public class Overloading{
+				   
+				       public static void main(string[] args){
+					   
+					     Overload(6f,4,"fuji");
+						 Overload(4,6f,"fuji");
+						 Overload("fuji",4,6f);
+						   
+					   
+					   }
+                  public static void Overload(float val1 ,int num,String name){
+	                      System.out.println("java");
+	   
+	                    }
+						 public static void Overload(int num,float val1,String name){
+	                      System.out.println("java");
+	   
+	                    }
+						 public static void Overload(String name ,int num,float val1){
+	                      System.out.println("oops");
+	   
+	                    } public static void Overload(int value1,int val2,int val3){
+	                      System.out.println("object");
+	   
+	                    }
+				   
+				   }
+				 
+				 
+			--------------	 
+				 
+		8)   CONSTRUCTOR VS METHOD 		 
+				 
+				 
+				 CONSTRUCTOR                                                         METHOD 
+				 
+				 
+		    * it is a special method to create and initializing           * it is a collection of function .the function contains the specific task
+			   an objects.
+				 
+			* the class name and constructor name must be same            * the method name is different	 
+				 
+			* there is no return type                                      * the return type is presented . 	 
+				 
+			* here no final,static keywords are used                       * in method is used static keywords
+				 
+				 
+				 
+			--------------------*----------
+
+      10) CONSTRUCTOR OVERLOADING
+	  
+	  
+	       DEFINITION  
+		       In constructor overloading ,the constructor name must be same but different in parameters 
+
+
+           Example 
+		   
+		      public class Animal{
+			  
+			  public Animal(){
+			  
+			     System.out.println("hi");
+			  }
+			  public Animal(int num){
+			  
+			     System.out.println("hi");
+			  }
+			  public Animal(String name){
+			  
+			     System.out.println("hi");
+			  }
+			  
+			  public static void main(String[] args){
+			  
+			  Animal animal =new Animal();
+			  Animal animal =new Animal(8);
+			  Animal animal =new Animal("fuji");
+			  
+			  }	  
+			  
+			  
+			  }
+
+
+    9)   STATIC VARIABLES ;
+	      
+		  * Static variables are accessed any where in side the class. dont want to create a objects 
+
+		  
+		  
+		  syntax:
+		     Static datatype refname = value;//initializing
+			 
+			 Static datatype refname;
+			 
+			 example:
+			    Static int value;
+				Static int value= 10;//initializing
+
+
+         STATIC METHODS
+		 
+		     the methods are called directly by its class name.
+			 dont want to create a objects
+
+          syntax:
+		    public  static  void method01(){
+			
+			
+			}
+			  
+		STATIC BLOCKS 
+                it is used to  declare , initialize the static variables .
+				it execute before the main methods.
+				
+			syntax:
+		    static {
+			
+			//// static variables
+			}	
+			  
+
+
+			
